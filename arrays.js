@@ -8,7 +8,7 @@ function addElementToBeginningOfArray(array, element) {
    return [element, ...array]
  }
  
-// alter the original array that's passed in (mutate array's value)
+// alter the original array that's passed in--mutable/destructive
  function destructivelyAddElementToBeginningOfArray(array, element){
    array.unshift(element)
    return array
@@ -21,11 +21,12 @@ function addElementToBeginningOfArray(array, element) {
  
 // mutate original array value
  function destructivelyAddElementToEndOfArray(array, element){
-   return array.push(element)
+   array.push(element)
+   return array
  }
  
- function accessElementInArray(array, element){
-   return array[element]
+ function accessElementInArray(array, index){
+   return array[index]
  }
  
 //DESTRUCTIVE-MUTABLE remove an element from the beginning of an array
