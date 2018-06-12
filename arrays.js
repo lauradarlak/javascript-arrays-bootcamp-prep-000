@@ -1,14 +1,46 @@
 
 // define variable chocolateBars--its value shoule be an array of strings
 
-var chocolate = ["snickers", "hundred grand", "kitkat", "skittles"]
+var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 
 // return a new array and not modify the original
 function addElementToBeginningOfArray(array, element) {
    return [element, ...array]
  }
  
-// alter the original array that's passed in
- function destructivelyAddElementToBeginningOfArray(array, element) {
-   return array = [element, ...array]
+// alter the original array that's passed in (mutate array's value)
+ function destructivelyAddElementToBeginningOfArray(array, element){
+   return array.unshift("foo")
  }
+ 
+ // return a new array and not modify the original
+ function addElementToEndOfArray(array, element){
+   return [...array, element]
+ }
+ 
+// mutate original array value
+ function destructivelyAddElementToEndOfArray(array, element){
+   return array.push(element)
+ }
+ 
+ function accessElementInArray(array, element){
+   return array[element]
+ }
+ 
+//DESTRUCTIVE-MUTABLE remove an element from the beginning of an array
+ function destructivelyRemoveElementFromBeginningOfArray(array){
+   return array.shift(1)
+ }
+ 
+ function removeElementFromBeginningOfArray(array){
+   return array.slice(1)
+ }
+ 
+ function destructivelyRemoveElementFromEndOfArray(array){
+   return array.pop()
+ }
+ 
+ 
+ 
+ 
+ 
