@@ -31,7 +31,8 @@ function addElementToBeginningOfArray(array, element) {
  
 //DESTRUCTIVE-MUTABLE remove an element from the beginning of an array
  function destructivelyRemoveElementFromBeginningOfArray(array){
-   return array.shift(1)
+   array.shift(1)
+   
  }
  
  function removeElementFromBeginningOfArray(array){
